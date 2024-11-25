@@ -1,0 +1,23 @@
+.cart-page {
+    padding: 2rem;
+  }
+  
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .remove-btn {
+    padding: 0.5rem 1rem;
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .remove-btn:hover {
+    background: darkred;
+  }
+  

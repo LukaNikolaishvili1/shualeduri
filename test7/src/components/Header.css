@@ -1,0 +1,52 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #eb6319;
+  color: white;
+}
+
+.header-logo {
+  font-size: 1.5rem;
+}
+
+.header-menu {
+  display: flex;
+  gap: 1rem;
+}
+
+.header-link {
+  color: white;
+  text-decoration: none;
+}
+
+.header-hamburger {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .header-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background: #444;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .header-menu.open {
+    display: flex;
+  }
+
+  .header-hamburger {
+    display: block;
+  }
+}
